@@ -14,8 +14,8 @@ const RelatedProduct = () => {
             const res=await axios.get("https://dummyjson.com/product")
             setData(res.data.products[0])
         } 
-        
-        return ()=>Fetch()
+        Fetch()
+        //return ()=>Fetch()
      },[])
 
 

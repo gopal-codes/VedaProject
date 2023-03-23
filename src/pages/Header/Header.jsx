@@ -20,7 +20,8 @@ const Header = () => {
         const data =await axios.get("https://dummyjson.com/products/")
         setImage(data.data.products[0].images)
     }
-    return ()=>getData();
+    getData()
+    // return ()=>getData();
     },[])
 
     // handling arrow click
