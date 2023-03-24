@@ -28,8 +28,15 @@ const Header = () => {
     const handleClick=(direction)=>{
       if(direction==="left"){
         setcurrentImg(currentImg>0?currentImg-1:0)
-      }else{
+      }
+      if(direction==="right"){
         setcurrentImg(currentImg<3? currentImg+1: 4)
+      }
+      if(direction==="left" && currentImg===0){
+        setcurrentImg(4)
+      }
+      if(direction==="right" && currentImg===4){
+        setcurrentImg(0)
       }
   }
 

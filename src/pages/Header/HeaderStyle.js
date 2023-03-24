@@ -33,10 +33,7 @@ export const Left = styled.div`
         flex:1;
       };
 `
-export const ItemsShow = styled.div`
-    display:flex;
-    flex-direction:column;
-`
+
 
 export const Image = styled.img`
     z-index:1;
@@ -61,19 +58,36 @@ export const Arrows = styled.div`
     position:absolute;
     left:${({left})=>left?"-100px":""};
     right:${({left})=>left?"":"-100px"};
+    z-index:3;
     top:100px;
     padding:13px;
     background-color:#fff;
     border-radius:50%;
     &:hover{
-        transform: scale(0.8);
+        transform: scale(0.9);
         background-color:#f9a216;
         color:white;
-    };
+    };    
     @media screen and (max-width: 769px) {
-        display:none;
+        left:${({left})=>left?"-8px":""};
+        right:${({left})=>left?"":"-8px"};
+        padding:8px;
     };
 `
+
+export const ItemsShow = styled.div`
+    display:flex;
+    flex-direction:column;
+    ${Thumbnail}:nth-child(1) ${Arrows} {
+        opacity:0.4;
+      };
+    &:hover{
+        ${Thumbnail}:nth-child(1) ${Arrows} {
+            opacity:1;
+          };
+    }
+`
+
 export const Images = styled.div`
     display:flex;
     justify-content:space-between;
@@ -154,14 +168,17 @@ export const Button= styled.button`
     flex:${({cart})=>cart?"":"1"};
     &:active{
         outline:2px solid #ab141d;
-    }
+        color:#ab141d;
+    };
+    &:hover{
+        & > h3{
+            color:green;
+        };
+    };
 `
 export const Price = styled.h3`
     font-size:1.4rem;
     color:#a9a69e;
-    &:active{
-        color:#ab141d;
-    }
 `
 export const CartRow = styled(FlexRow)`
     justify-content:space-around;
@@ -170,7 +187,7 @@ export const CartRow = styled(FlexRow)`
         flex-direction:${({button})=>button?"":"column"};
         gap:${({button})=>button?"0px":"15px"};
         flex-wrap:${({button})=>button?"wrap":"nowrap"};
-      };
+    };
 `
 export const AddToCart = styled.button`
     color:white;
@@ -181,6 +198,9 @@ export const AddToCart = styled.button`
     font-size:1.4rem;
     background-color:#ab141d;
     border:none;
+    &:active{
+        transform:scale(1.01);
+    };
 `
 
 export const Bottom = styled.div`
