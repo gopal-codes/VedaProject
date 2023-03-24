@@ -63,18 +63,23 @@ export const Arrows = styled.div`
     right:${({left})=>left?"":"-100px"};
     top:100px;
     padding:13px;
-    background:white;
+    background-color:#fff;
     border-radius:50%;
+    &:hover{
+        transform: scale(0.8);
+        background-color:#f9a216;
+        color:white;
+    };
     @media screen and (max-width: 769px) {
         display:none;
-      };
+    };
 `
 export const Images = styled.div`
     display:flex;
     justify-content:space-between;
     @media screen and (max-width: 1280px) {
         margin:0 25px;
-      };
+    };
 `
 
 export const Right = styled.div`

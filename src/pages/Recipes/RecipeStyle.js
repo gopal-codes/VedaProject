@@ -13,6 +13,7 @@ export const Wrapper = styled.div`
       };
 `
 export const Container = styled.div`
+    margin-top:50px;
     display:flex;
     gap:60px;
     justify-content:space-between;

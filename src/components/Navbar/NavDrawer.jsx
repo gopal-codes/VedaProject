@@ -10,6 +10,7 @@ z-index:4;
 width:50%;
 height:100vh;
 background-color:black;
+padding:0px 10px;
 padding-top:100px;
 display:none;
 transform:${({Drawer})=>Drawer?"translateX(0%)":"translateX(-100%)"};
@@ -24,6 +25,9 @@ const Text= Styled.p`
     font-size:2rem;
     color:white;
     margin:40px 0px;
+    &:hover{
+        color:#ffa;
+    }
 `
 
 const NavDrawer = ({Drawer,setDrawer}) => {

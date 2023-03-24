@@ -26,16 +26,18 @@ export const MainContainer = styled.div`
     justify-content:space-around;
     @media screen and (max-width: 1280px) {
         flex-wrap:wrap;
-        gap:5px;
       };
 `
 
 export const SingleReview = styled.div`
     width:360px;
     display:flex;
-    gap:10px;
+    gap:5px;
     flex-direction:column;
     align-items:center;
+    @media screen and (max-width: 769px) {
+        border-bottom:5px solid yellow;
+      };
 `
 
 export const Ratings= styled.div`
