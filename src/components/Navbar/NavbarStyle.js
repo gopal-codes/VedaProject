@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
     display:flex;
     align-items:center;
     padding:0 30px;
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 1280px) {
         padding:0px 0px;
     };
 `
@@ -21,7 +21,7 @@ export const Left= styled.div`
     flex:4.5;
     display:flex;
     align-items:center;
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 1280px) {
         display:none;
     };
 `
@@ -40,7 +40,7 @@ export const CompanyName =styled.p`
     font-size:3rem;
     font-style:italic;
     font-weight:900;
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 1280px) {
         font-size:2rem;
         text-align:left;
     };
@@ -51,7 +51,7 @@ export const Right= styled.div`
     display:flex;
     align-items:center;
     justify-content:flex-end;
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 1280px) {
         display:none;
     };
 `
@@ -66,7 +66,7 @@ align-items:center;
 
 export const ShowMenu = styled.div`
 display:none;
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1280px) {
     display:flex;
 };
 `

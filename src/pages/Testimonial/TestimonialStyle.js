@@ -12,11 +12,11 @@ export const Wrapper= styled.div`
 export const Title= styled.p`
     font-size:3rem;
     font-weight:800;
-    @media screen and (max-width: 1280px) {
-        font-size:2.5rem;
-        padding:20px 0;
-        text-align:center;
-      };
+        @media screen and (max-width: 1280px) {
+            font-size:2.5rem;
+            padding:20px 0;
+            text-align:center;
+        };
 `
 export const MainContainer = styled.div`
     padding:50px;
@@ -24,7 +24,10 @@ export const MainContainer = styled.div`
     display:flex;
     gap:40px;
     justify-content:space-around;
-    
+    @media screen and (max-width: 1280px) {
+        flex-wrap:wrap;
+        gap:5px;
+      };
 `
 
 export const SingleReview = styled.div`

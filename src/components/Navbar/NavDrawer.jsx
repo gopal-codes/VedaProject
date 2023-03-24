@@ -14,7 +14,7 @@ padding-top:100px;
 display:none;
 transform:${({Drawer})=>Drawer?"translateX(0%)":"translateX(-100%)"};
 transition: transform 1s ease;
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1280px) {
     display:flex;
     flex-direction:column;
     align-items:center;
