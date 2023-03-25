@@ -56,7 +56,7 @@ const Header = () => {
               <Thumbnail>
                 <Arrows onClick={()=>handleClick("left")} left ><IoIosArrowBack size="35px" /></Arrows>
                 <Image src={image[currentImg]} currentshow /> 
-                <Arrows onClick={()=>handleClick("right")} ><IoIosArrowForward size="35px" /></Arrows>
+                <Arrows onClick={()=>handleClick("right")} right><IoIosArrowForward size="35px" /></Arrows>
               </Thumbnail>
               <Images>
                 {image && image.map((imag,index)=>(<Image eff={index===currentImg?true:false} onClick={()=>setcurrentImg(index)} key={imag} src={imag} />))}

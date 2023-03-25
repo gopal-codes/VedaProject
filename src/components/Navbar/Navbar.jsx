@@ -15,12 +15,12 @@ const Navbar = () => {
     <Wrapper>
         <NavDrawer Drawer={Drawer} setDrawer={setDrawer} />
         <Left>
-            <NavText>
+            <div>
                 <Select>
                     <option>Shop</option>
                     <option>Sell</option>
                 </Select>
-            </NavText>
+            </div>
             <NavText>Bundles</NavText>
             <NavText>Subscription&Save</NavText>
         </Left>
@@ -28,12 +28,12 @@ const Navbar = () => {
             <CompanyName>GUMMYBOY</CompanyName>
         </Center>
         <Right>
-            <NavText>
+            <div >
                     <Select>
                         <option>Learn</option>
                         <option>Teach</option>
                     </Select>
-                </NavText>
+            </div>
             <NavText>About us</NavText>
             
             <NavIcon><BiSearch  /> </NavIcon>

@@ -14,6 +14,11 @@ display:flex;
 flex-direction:column;
 align-items:center;
 justify-content:center;
+@media screen and (max-width: 769px) {
+  height:35px;
+  padding-left: 0px;
+  padding-right: 0px;
+};
 `
 
 const Text = styled.p`

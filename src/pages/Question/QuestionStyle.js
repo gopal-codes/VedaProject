@@ -36,6 +36,7 @@ export const QuestionFlex = styled(FlexRow)`
     align-items:center;
     justify-content:space-between;
     font-size:3.5rem;
+    cursor:pointer;
 `
 export const Questions = styled.p`
     font-size:1.8rem;

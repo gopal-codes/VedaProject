@@ -27,6 +27,7 @@ export const MainContainer =styled.div`
       };
 `
 export const Card = styled.div`
+    cursor:pointer;
     width:250px;
     display:flex;
     flex-direction:column;

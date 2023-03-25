@@ -69,9 +69,9 @@ export const Arrows = styled.div`
         color:white;
     };    
     @media screen and (max-width: 769px) {
-        left:${({left})=>left?"-8px":""};
-        right:${({left})=>left?"":"-8px"};
-        padding:8px;
+        left:${({left})=>left?"18px":""};
+        right:${({right})=>right?"18px":""};
+        padding:7px;
     };
 `
 
