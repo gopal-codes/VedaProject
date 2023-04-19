@@ -48,9 +48,7 @@ const Header = () => {
         <NavigationText clicked >Tom Yom Chicken</NavigationText>
       </div>
         
-      <MainContainer style={{position:"relative"}}>
-          <BsBackspaceFill style={{position:"absolute" , left:"10px"}} />
-          <BsEvFrontFill style={{position:"absolute" , right:"10px"}}/>
+      <MainContainer>
         <Left>
 
             <ItemsShow>
