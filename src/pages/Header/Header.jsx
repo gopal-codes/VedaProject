@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import {Span, Arrows, Image, Images, ItemsShow, Left, MainContainer, NavigationText, Reviews, Right, Thumbnail, Title, Wrapper, Icon, Description, Points, ButtonTitle, Button, Price, AddToCart, CartRow, Bottom, Content, BottomText, BottomFlex } from './HeaderStyle'
 import axios from "axios";
 import {IoIosArrowBack,IoIosArrowForward} from "react-icons/io"
-import {BsStarFill,BsCheckCircle, BsImageAlt, BsPatchCheck, BsPercent} from "react-icons/bs"
+import {BsStarFill,BsCheckCircle, BsImageAlt, BsPatchCheck, BsPercent, BsBackspaceFill, BsEvFrontFill} from "react-icons/bs"
 import { FlexColm, FlexRow } from '../../components/globleStyle';
 
 const Header = () => {
@@ -48,8 +48,9 @@ const Header = () => {
         <NavigationText clicked >Tom Yom Chicken</NavigationText>
       </div>
         
-      <MainContainer>
-
+      <MainContainer style={{position:"relative"}}>
+          <BsBackspaceFill style={{position:"absolute" , left:"10px"}} />
+          <BsEvFrontFill style={{position:"absolute" , right:"10px"}}/>
         <Left>
 
             <ItemsShow>

@@ -207,7 +207,7 @@ export const Bottom = styled.div`
     display:flex;
     justify-content:center;
     position:absolute;
-    bottom:-40px;
+    bottom:-40%;
     width:100%;
     @media screen and (max-width: 1280px) {
         left:50%;
